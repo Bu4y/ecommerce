@@ -15,11 +15,11 @@
 
 <ion-content padding>
   <!-- <list [listdata]="cart.products"></list> -->
-
-   <ion-list>
+  <list-item-cart [items]="cart.products"></list-item-cart>
+  <!-- <ion-list>
     <ion-item *ngFor="let itm of cart.products">
       {{itm.product.name}}
     </ion-item>
-  </ion-list> 
+  </ion-list> -->
   total: {{cart.amount}}
 </ion-content>

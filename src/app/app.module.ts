@@ -73,6 +73,7 @@ import { ProductdetailServiceProvider } from '../pages/productdetail/productdeta
 import { TopbarComponent } from "../components/topbar/topbar";
 import { ShopdetailPage } from "../pages/shopdetail/shopdetail";
 import { ShopdetailServiceProvider } from '../pages/shopdetail/shopdetail.service';
+import { ListItemCartComponent } from "../components/list-item-cart/list-item-cart";
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -102,7 +103,8 @@ export function createTranslateLoader(http: Http) {
     DataScrollXComponent,
     ProductdetailPage,
     TopbarComponent,
-    ShopdetailPage
+    ShopdetailPage,
+    ListItemCartComponent
   ],
   imports: [
     BrowserModule,
